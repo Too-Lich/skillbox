@@ -1,0 +1,15 @@
+curl -X POST -d {\"name\":\"Игорь\",\"age\":30} localhost:9000/create
+curl -X POST
+
+curl '-X', 'POST', '-d', '{\"name\":\"Игорь\",\"age\":30}', 'localhost:9000/create'
+
+
+curl -X POST -d {\"source_id\":\"Игорь\",\"target_id\":\"Иван\"} localhost:9000/makefriend
+
+curl -X DELETE -d {\"target_id\":\"Петр\"} localhost:8080/user
+-d {\"name\":\"Иван\",\"age\":30} localhost:9000/create
+curl -X GET localhost:8080/friends/Игорь
+
+curl -X PUT -d {\"new age\":\"28\"} localhost:9000/Игорь
+
+curl '-X', 'PUT', '-d', '{\"new_age\":28}', 'localhost:9000/Игорь'
